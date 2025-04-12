@@ -5,6 +5,8 @@ import org.testng.annotations.*;
 import pageObjects.AlertsPage;
 import utils.DriverFactory;
 
+//
+
 public class JSAlertsTest {
     @BeforeMethod
     public void setup() {
