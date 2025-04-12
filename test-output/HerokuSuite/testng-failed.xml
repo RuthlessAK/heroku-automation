@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="methods" name="Failed suite [HerokuSuite]">
+  <test thread-count="3" parallel="methods" name="HerokuTests(failed)">
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="testValidLogin"/>
+          <include name="testInvalidLogin"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.JSAlertsTest">
+        <methods>
+          <include name="testJSAlert"/>
+          <include name="testJSPrompt"/>
+          <include name="setup"/>
+          <include name="testJSConfirm"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.JSAlertsTest -->
+    </classes>
+  </test> <!-- HerokuTests(failed) -->
+</suite> <!-- Failed suite [HerokuSuite] -->
